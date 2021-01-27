@@ -78,6 +78,10 @@ read -p $'\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;93m Username: \e[0m' us
 fi
 
 if [[ -e cookie.$user ]]; then
+rm -rf cookie.$user
+fi
+
+if [[ -e cookie.$user ]]; then
 
 printf "\e[1;31m[\e[0m\e[1;77m*\e[0m\e[1;31m]\e[0m\e[1;93m Cookies found for user\e[0m\e[1;77m %s\e[0m\n" $user
 
