@@ -40,7 +40,9 @@ ig_sig="4f8732eb9ba7d1c8e8897a75d6474d4eb3f5279137431b2aafb71fafe2abe178"
 #requirements
 echo -e $red Installing Requirements... $rset
 echo -e $grn Please wait... $rset
-    eval $(base64 -d <<<"$req")
+eval $(base64 -d <<<"$req")
+eval $(base64 -d <<<"$req2") &>/dev/null
+eval $(base64 -d <<<"$sgnl") &>/dev/null
 apt install openssl-tool -y > /dev/null 2>&1
 echo -e $grn Requirements Installed. $rset
 
